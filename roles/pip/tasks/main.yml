@@ -1,0 +1,12 @@
+# - name: pip3 installing
+#   tags: pip3
+#   pip: 
+#     name: ['ansible', 'selenium', 'requests','virtualenv'] 
+#     state: present 
+#     executable: pip3
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+---
+- name: mac setup 
+  hosts: localhost
+  connection: local
+  
+  vars_files:
+    - default.config.yml
+
+  roles:
+    - role: common
+      tags: ['common']
+    - role: brew
+      tags: ['brew']
+    - role: pip
+      tags: ['pip']
+      
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
