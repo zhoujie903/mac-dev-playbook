@@ -30,7 +30,7 @@ install:
 
 script:
   # Install dependencies.
-  - "ansible-galaxy install -r requirements.yml"
+  # - "ansible-galaxy install -r requirements.yml"
 
   # Check the role/playbook's syntax.
   - "ansible-playbook main.yml --syntax-check"
