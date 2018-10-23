@@ -1,11 +1,9 @@
 # - name: Install HomeBrew
 #   tags: homebrew
-#   # 没有安装过程中的输出 
 #   shell: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 
 
 # - name: Install oh-my-zsh
 #   tags: oh-my-zsh 
-#   # 没有安装过程中的输出
 #   shell: sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" 
 
 
