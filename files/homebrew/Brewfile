@@ -1,0 +1,42 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core", "https://mirrors.ustc.edu.cn/homebrew-core.git"
+tap "homebrew/services"
+brew "chisel"
+brew "ctags"
+brew "git"
+brew "sqlite"
+brew "libimobiledevice", args: ["HEAD"]
+brew "ideviceinstaller"
+brew "ios-deploy"
+brew "libmagic"
+brew "mas", link: false
+brew "mongodb"
+brew "mysql", restart_service: true
+brew "node", link: false
+brew "protobuf"
+brew "python"
+brew "redis"
+brew "ssh-copy-id"
+brew "tesseract", args: ["with-training-tools"]
+brew "the_silver_searcher"
+brew "tree"
+brew "watchman"
+brew "wget"
+cask "docker"
+cask "fastlane"
+cask "sublime-text"
+cask "wkhtmltopdf"
+cask "xquartz"
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "iPic", id: 1101244278
+mas "Keynote", id: 409183694
+mas "Kindle", id: 405399194
+mas "Maipo", id: 789066512
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Reeder", id: 880001334
+mas "Snap", id: 418073146
+mas "WeChat", id: 836500024
+mas "Xcode", id: 497799835
