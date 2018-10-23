@@ -19,6 +19,19 @@
       tags: ['brew']
     - role: pip
       tags: ['pip']
+
+
+# playbook学习说明
+# include_vars 模块
+#   Load variables from files, dynamically within a task
+
+# with_fileglob
+# fileglob - list files matching a pattern
+#   Matches all files in a single directory, non-recursively, that match a pattern. It calls Python’s “glob” library
+
+# playbook_dir: Special Variables 
+#   are directly not settable by the user, Ansible will always override them to reflect internal state.
+#   The path to the directory of the playbook that was passed to the ansible-playbook command line.
       
 
     

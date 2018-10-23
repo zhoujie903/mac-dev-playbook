@@ -1,9 +1,3 @@
-# - name: homebrew installing
-#   tags: brew 
-#   homebrew: 
-#     name: ['the_silver_searcher','mysql', 'mongodb', 'redis', 'sqlite', 'chisel'] 
-#     state: present
-
 ---
 
 - name: Ensure Homebrew directory exists.
@@ -136,6 +130,13 @@
 - name: Install from Brewfile.
   command: "brew bundle chdir={{ homebrew_brewfile_dir }}"
   when: homebrew_brewfile.stat.exists and homebrew_use_brewfile
+
+
+# task学习说明
+# stat: "path={{ homebrew_brew_bin_path }}/brew"
+# stat是一个module: 
+#   Retrieve file or file system status
+#   Retrieves facts for a file similar to the linux/unix ‘stat’ command
 
 
 
