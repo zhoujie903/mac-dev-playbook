@@ -48,7 +48,7 @@ mas_installed_apps:
   - { id: 789066512, name: "Maipo (3.5.0)" }
 
 # Install packages from other package managers.
-pip_packages: []
+pip_packages: ['selenium', 'requests']
   # - name: mkdocs
   #   state: present # present/absent/latest, default: present
   #   version: "0.16.3" # default: N/A
