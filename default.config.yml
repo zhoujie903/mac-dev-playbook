@@ -1,9 +1,13 @@
 ---
+homebrew_taps: []
+  # - homebrew/core
+  # - homebrew/cask
 
-homebrew_installed_packages: []
+
+homebrew_installed_packages: 
   # - ansible # Installed via Pip.
-  # - autoconf
-  # - bash-completion
+  - autoconf
+  - bash-completion
   # - httpie
   # - sqlite
   # - ssh-copy-id
@@ -13,16 +17,11 @@ homebrew_installed_packages: []
 
 homebrew_uninstalled_packages: []
 
-homebrew_taps: []
-  # - homebrew/core
-  # - homebrew/cask
-
-homebrew_cask_appdir: /Applications
-homebrew_cask_apps: []
+homebrew_cask_apps: 
   # - chromedriver
   # - docker
   # - firefox
-  # - google-chrome
+  - google-chrome
   # - handbrake
   # - licecap
   # - limechat
@@ -31,8 +30,22 @@ homebrew_cask_apps: []
   # - transmit
   # - vagrant
 
-# See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
+homebrew_cask_uninstalled_apps: []
+
+# 参看 `geerlingguy.mas` role 的文档的使用
+mas_installed_apps: 
+  - { id: 1101244278, name: "iPic (1.5.4)" }
+  - { id: 405399194, name: "Kindle (1.23.3)" }
+  - { id: 418073146, name: "Snap (1.5)" }
+  # - { id: 497799835, name: "Xcode (10.0)" }
+  # - { id: 408981434, name: "iMovie (10.1.9)" }
+  # - { id: 409183694, name: "Keynote (8.2)" }
+  - { id: 836500024, name: "WeChat (2.3.18)" }
+  # - { id: 409201541, name: "Pages (7.2)" }
+  - { id: 880001334, name: "Reeder (3.2.1)" }
+  # - { id: 682658836, name: "GarageBand (10.3.1)" }
+  # - { id: 409203825, name: "Numbers (5.2)" }
+  - { id: 789066512, name: "Maipo (3.5.0)" }
 
 # Install packages from other package managers.
 pip_packages: []
